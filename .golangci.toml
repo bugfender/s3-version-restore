@@ -1,0 +1,53 @@
+[run]
+tests = false
+
+[issues]
+max-same-issues = 0
+max-issues-per-linter = 0
+exclude-use-default = false
+
+[linters]
+enable = [
+	"asasalint",
+	"asciicheck",
+	"bidichk",
+	"bodyclose",
+	"contextcheck",
+	"depguard",
+	"durationcheck",
+	"errchkjson",
+	"errorlint",
+	"execinquery",
+	"exhaustive",
+	"exportloopref",
+	"gci",
+	"gocheckcompilerdirectives",
+	"goimports",
+	"gosec",
+	"nilerr",
+	"noctx",
+	"prealloc",
+	"reassign",
+	"rowserrcheck",
+	"sqlclosecheck",
+	"wrapcheck",
+]
+
+[linters-settings.depguard.rules.main]
+deny = [
+	{pkg = "golang.org/x/net/context", desc = "use 'context' package instead"},
+	{pkg = "log$", desc = "use 'log/slog' package instead"}
+]
+
+[linters-settings.goimports]
+local-prefixes = "s3-time-machine"
+
+[linters-settings.gci]
+sections = [
+    "standard",
+    "default",
+    "prefix(s3-time-machine)",
+]
+
+[output]
+uniq-by-line = false
