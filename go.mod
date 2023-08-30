@@ -1,4 +1,4 @@
-module s3-time-machine
+module s3-version-restore
 
 go 1.21
 

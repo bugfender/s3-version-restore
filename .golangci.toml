@@ -40,13 +40,13 @@ deny = [
 ]
 
 [linters-settings.goimports]
-local-prefixes = "s3-time-machine"
+local-prefixes = "s3-version-restore"
 
 [linters-settings.gci]
 sections = [
     "standard",
     "default",
-    "prefix(s3-time-machine)",
+    "prefix(s3-version-restore)",
 ]
 
 [output]

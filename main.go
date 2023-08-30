@@ -11,7 +11,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"s3-time-machine/s3"
+	"s3-version-restore/s3"
 )
 
 func main() {
