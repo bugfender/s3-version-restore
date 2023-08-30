@@ -6,7 +6,7 @@ This tool iterates over all objects in a bucket and restores versions at a given
 
 ## How it works
 
-It modifies the version information in-place, so objects are never downloaded/uploaded.
+It modifies the version information in place, so objects are never downloaded/uploaded.
 
 Version information is always added, so information is never lost. Object versions are restored by creating a new 
 version with the desired contents.
@@ -21,3 +21,16 @@ You will typically want to declare `AWS_ACCESS_KEY_ID` and `AWS_ACCESS_KEY`.
 You can also define `AWS_ENDPOINT_URL_S3` to specify a custom S3 endpoint.
 
 Note: [endpoint URLs are currently specified](https://docs.aws.amazon.com/sdkref/latest/guide/feature-ss-endpoints.html) but the Go AWS SDK does not implement them, so we implement `AWS_ENDPOINT_URL_S3`.
+
+## Building
+
+```
+go build
+```
+
+There is also a `build.sh` file to build for multiple platforms.
+
+## Support
+
+This tool is open source and free to use (see `LICENSE`), but you can get commercial 
+support from Beenario GmbH for a fee. Contact us if you're interested.
