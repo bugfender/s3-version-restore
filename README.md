@@ -34,3 +34,7 @@ There is also a `build.sh` file to build for multiple platforms.
 
 This tool is open source and free to use (see `LICENSE`), but you can get commercial 
 support from Beenario GmbH for a fee. Contact us if you're interested.
+
+## Acknowledgements
+
+The inspiration for this tool came from [angeloc/s3-pit-restore](https://github.com/angeloc/s3-pit-restore/), although it didn't work for our use case.
